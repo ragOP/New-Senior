@@ -364,7 +364,7 @@ export default function Fifth_SP() {
             <img style={{marginTop: "40px"}} className="topic-img-middle-z" src={one} alt="head" />
             <div className='' style = {{marginTop:"1rem", textAlign: "center", padding: "0 10%", fontSize: "10px"}}><b>Find D-SNPs from Medicare Advantage carriers like Humana,
             UnitedHealthcare® and Aetna.</b></div>
-            <img style={{margin: "40px 10%"}} className="topic-img-middle-z" src={two} alt="head" />
+            <img style={{margin: "94% 0% 8% 0%"}} className="topic-img-middle-z" src={two} alt="head" />
             <div className="main-des-5"  style={{marginTop:'-5px'}}>
             Participating sales agencies represent
             Medicare Advantage [HMO, HMO SNP, PPO, PPO SNP and PFFS] organizations and Medicare-approved Part D sponsors that are contracted with Medicare. Enrollment depends on the plan's contract renewal with Medicare.
