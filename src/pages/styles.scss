@@ -154,7 +154,7 @@ a{
   .topic-img-middle-z{
     width: 80%;
     margin-left: 11%;
-    margin-top: -6px;
+    margin-top: 10px;
   }
   .topic-img-middle-test{
     width: 70%;
@@ -247,12 +247,12 @@ a{
   }
 
   .main-des-5{
-    
     font-size: 1.5rem;
     line-height: 2rem;
     margin: 1rem 0;
     text-align: left;
     color: #1f2937;
+    padding: 0 10%;
   }
   .main-des-5-t{
     
@@ -297,11 +297,12 @@ a{
   }
   
   .answer{
-    display: grid;
-    grid-template-columns: repeat(1,minmax(0,1fr));
-    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 1.2rem;
     justify-items: center;
+    padding: 0 10%;
   }
   
   .answer-btn{
@@ -693,6 +694,19 @@ a{
     .quiz-5{
       font-size: 1.5rem;
       line-height: 2rem;
+      margin-top: 30px;
+    }
+    .answer-no{
+      border-radius: 50px;
+      width: 250px;
+      background: red;
+      box-shadow: 0 5px 10px 0 rgba(255, 0, 0, 0.8);
+    }
+    .answer-yes{
+      border-radius: 50px;
+      width: 250px;
+      background: green;
+      box-shadow: 0 5px 10px 0 rgba(0, 255, 0, 0.8);
     }
     .survey{
       padding: 0;

@@ -8,6 +8,8 @@ import { scrollTo } from "../utils";
 import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/hero5.png";
+import one from "../assets/one.png";
+import two from "../assets/two.png";
 import Headline from "../assets/headline_spandeb1.png";
 
 // google tag manager
@@ -53,15 +55,15 @@ export default function Fifth_SP() {
       }
     });
     // Show new toast
-    toast(<div dangerouslySetInnerHTML={{ __html: boldedMessage }} />, {
-      position: "bottom-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: false,
-      pauseOnHover: true,
-      draggable: true,
-      closeButton: false,
-    });
+    // toast(<div dangerouslySetInnerHTML={{ __html: boldedMessage }} />, {
+    //   position: "bottom-right",
+    //   autoClose: 5000,
+    //   hideProgressBar: true,
+    //   closeOnClick: false,
+    //   pauseOnHover: true,
+    //   draggable: true,
+    //   closeButton: false,
+    // });
   };
   useEffect(() => {
     const delayedEffect = setTimeout(() => {
@@ -184,8 +186,8 @@ export default function Fifth_SP() {
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
-  const [yes,setYes]=useState("YES, I'M 65 OR OLDER")
-  const [no,setNo]=useState("NO, I'M 64 OR YOUNGER")
+  const [yes,setYes]=useState("YES")
+  const [no,setNo]=useState("NO")
   
 
   const stepProcess = () => {
@@ -330,18 +332,19 @@ export default function Fifth_SP() {
             <div className="main-descrition-5-5">
               <div className="main-des-title-6-7">
                 <b>
-                Americans Over 65 Can Now Qualify For The $3600 Grocery Allowance in 2024!
+                Claim Your Food Allowance Card Worth $900!
                 </b>
+                <span style={{"color": "yellow"}}>&nbsp;(LAST CHANCE)</span>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
-              <div  style={{marginTop:'14px'}}className="main-des-5">
+              {/* <div  style={{marginTop:'14px'}}className="main-des-5">
               Americans over 65 years old can claim the 2024 Grocery Allowance Card that gives them up to $3600. Americans can use the funds to fully cover their Groceries, Medicines, etc. at Walmart and thousands of other participating stores!
 
-              </div>
-              <div className="main-des-5"  style={{marginTop:'-5px'}}>
+              </div> */}
+              {/* <div className="main-des-5"  style={{marginTop:'-5px'}}>
               If you have not yet claimed your monthly allowance then answer the questions below and once approved <b>you will have your $3,600 Grocery Allowance mailed to you within a few days ready for use!</b>
-              </div>
+              </div> */}
               {/* <div className='main-des-5' style = {{marginTop:"1rem"}}><b>Simplemente responda las siguientes preguntas:</b></div> */}
             </div>
             <div style={{marginTop:'-5px'}} className="survey">
@@ -349,14 +352,26 @@ export default function Fifth_SP() {
                 {quiz}
               </div>
               <div  className="answer">
-                <div className="answer-btn-5" onClick={handleQuizP}>
+                <div className="answer-btn-5 answer-yes" onClick={handleQuizP}>
               {yes}
                 </div>
-                <div className="answer-btn-5" onClick={handleQuizN}>
+                <div className="answer-btn-5 answer-no" onClick={handleQuizN}>
               {no}
                 </div>
               </div>
             </div>
+            <img style={{marginTop: "40px"}} className="topic-img-middle-z" src={one} alt="head" />
+            <div className='' style = {{marginTop:"1rem", textAlign: "center", padding: "0 10%", fontSize: "10px"}}><b>Find D-SNPs from Medicare Advantage carriers like Humana,
+            UnitedHealthcare® and Aetna.</b></div>
+            <img style={{margin: "40px 10%"}} className="topic-img-middle-z" src={two} alt="head" />
+            <div className="main-des-5"  style={{marginTop:'-5px'}}>
+            Participating sales agencies represent
+            Medicare Advantage [HMO, HMO SNP, PPO, PPO SNP and PFFS] organizations and Medicare-approved Part D sponsors that are contracted with Medicare. Enrollment depends on the plan's contract renewal with Medicare.
+              </div>
+              <div className="main-des-5"  style={{marginTop:'-5px'}}>We do not offer every plan available in your area. Currently we represent over 22 organizations which offer 38 products in your area. Please contact Medicare.gov, 1- 800-MEDICARE, or your local State Health Insurance Program (SHIP) to get information on all of your options.
+              </div>
+              <div className="main-des-5"  style={{marginTop:'-5px'}}>Not affiliated with or endorsed by any government agency. This is a solicitation of insurance. There is absolutely no obligation to enroll. At General-Medicare.com you will talk with a licensed insurance agent in your state. Enrollment in a plan may be limited to certain times of the year unless you qualify for a special enrollment period or you are in your Medicare Initial Election Period.
+              </div>
           </div>
         </>
       ) : step !== "process" && step !== "completed" ? (
