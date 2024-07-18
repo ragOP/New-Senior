@@ -335,7 +335,7 @@ export default function Fifth_SP() {
                 <b>
                 Claim Your Food Allowance Card Worth $900!
                 </b>
-                <span style={{"color": "#fde047"}}>&nbsp;(FINAL CHANCE)</span>
+                <span style={{"color": "red"}}>&nbsp;(FINAL CHANCE)</span>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
