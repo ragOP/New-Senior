@@ -245,6 +245,7 @@ export default function Fifth_SP() {
 
   useEffect(() => {
     stepProcess();
+    console.log("ht");
   }, [step]);
 
   const topScroll = (id: any) => {
